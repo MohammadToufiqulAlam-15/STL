@@ -5,10 +5,9 @@ int main()
 
  {
 
-  vector<int> v = {5,3,1,2};
+  vector<int> v = {5,3,3,4,1,1,2};
 
-  //Sort(5,3,1)
-  sort(v.begin()+1, v.begin()+3);
+  sort(v.begin(), v.end(),greater<int>());
 
   for(auto u : v) cout << u <<" ";
   cout <<endl;
